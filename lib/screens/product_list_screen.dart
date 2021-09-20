@@ -16,7 +16,7 @@ class ProductListScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ChangeNotifierProvider(
-          builder: (_) => ProductListState(category.id),
+          create: (_) => ProductListState(category.id),
           child: Consumer<ProductListState>(
             builder: (context, state, child) {
               return SafeArea(

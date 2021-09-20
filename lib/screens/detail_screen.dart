@@ -24,7 +24,7 @@ class _DetailScreenState extends State<DetailScreen> {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-        builder: (_) => DetailState(widget._product.id),
+        create: (_) => DetailState(widget._product.id),
         child: Scaffold(
           body: SafeArea(
             child: CustomScrollView(

@@ -105,7 +105,7 @@ class CartScreen extends StatelessWidget {
                                   MaterialPageRoute(
                                       builder: (context) =>
                                           ChangeNotifierProvider<CheckoutState>(
-                                              builder: (_) => CheckoutState(),
+                                              create: (_) => CheckoutState(),
                                               child: Checkout(
                                                 productsInCart:
                                                     state.productsInCart,

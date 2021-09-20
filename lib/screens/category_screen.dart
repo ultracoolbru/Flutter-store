@@ -29,7 +29,7 @@ class CategoryScreen extends StatelessWidget {
                       fullscreenDialog: true,
                       builder: (_) => ChangeNotifierProvider(
                             child: SearchScreen(),
-                            builder: (_) => SearchState(),
+                            create: (_) => SearchState(),
                           )));
                 },
                 child: Column(

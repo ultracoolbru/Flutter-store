@@ -16,7 +16,7 @@ class App extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(
-          builder: (_) => AppState(initialScreen: HomeScreen(), screens: [
+          create: (_) => AppState(initialScreen: HomeScreen(), screens: [
             HomeScreen(),
             CategoryScreen(),
             CartScreen(),
@@ -24,16 +24,16 @@ class App extends StatelessWidget {
           ]),
         ),
         ChangeNotifierProvider(
-          builder: (_) => HomeState(),
+          create: (_) => HomeState(),
         ),
         ChangeNotifierProvider(
-          builder: (_) => CartState(),
+          create: (_) => CartState(),
         ),
         ChangeNotifierProvider(
-          builder: (_) => CategoryState(),
+          create: (_) => CategoryState(),
         ),
         ChangeNotifierProvider(
-          builder: (_) => SettingState(),
+          create: (_) => SettingState(),
         ),
       ],
       child: Consumer<AppState>(

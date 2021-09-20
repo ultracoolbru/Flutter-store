@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 class Constants {
   static final CONSUMER_KEY_CLOUD =
-      'ck_fc75eb207e9e48ecc852fbfdd9461f112ef9d860';
+      'ck_5ffeadee39d89e5c852317ef243858701fc2c8e4';
   static final CONSUMER_SECRET_CLOUD =
-      'cs_998324c7091df9dd256117dcf6105865f155de78';
+      'cs_10e6abfbdcf80b0c13345c9250049515147c59fc';
 
-  static final URL_CLOUD = 'https://mastigophoran-miner.000webhostapp.com';
+  static final URL_CLOUD = 'https://supercool.clothing/';
 
   static final APP_FOLDER = 'COOL_STORE';
 
